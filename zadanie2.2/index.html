@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS | FORM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main class="main_flex_container">
+        <h1> Employment Form </h1>
+
+        <form method="post">
+            <section class="element_flex">
+                <label class="label">
+                    First name:
+                    <input type="text" id="fname" name="fname" required/>
+                </label>
+
+                <label class="label">
+                    Last name:
+                    <input type="text" id="lname" name="lname" required/>
+                </label>
+            </section><br>
+
+
+            <section class="element_flex">
+                <label class="label">
+                    E-mail:
+                    <input type="email" id="email" name="email" required/>
+                </label>
+
+                <label class="label">
+                    Phone:
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required/>
+                </label>
+
+                <label class="label">
+                    Date of birth:
+                    <input type="date" id="date" name="date" min="2022-11-29" required/>
+                </label>
+            </section><br>
+
+            <section class="element_flex">
+                <label class="label">
+                    Gender:
+                    <select name="gender" id="gender" required>
+                        <option value=""> </option>
+                        <option value="woman">Kobieta</option>
+                        <option value="man">Mężczyzna</option>
+                    </select>
+                </label>
+            </section><br>
+
+            <section class="element_flex">
+                <label class="label">
+                    What are you looking for
+                    <div class="radiocolor">
+                        <input type="radio" id="software" name="radio" value="Software" required>
+                        <label for="software">Software Engineer</label>
+
+                        <input type="radio" id="designer" name="radio" value="Designer">
+                        <label for="designer">UX Designer</label>
+
+                        <input type="radio" id="specialist" name="radio" value="Specialist">
+                        <label for="specialist">Analytics Specialist</label>
+
+                        <input type="radio" id="manager" name="radio" value="Manager">
+                        <label for="manager">Project Manager</label>
+                    </div>
+                </label>
+            </section><br>
+
+            <section class="element_flex">
+                <label class="label">
+                    Which programming languages do you know:
+                    <div class="radiocolor">
+                        <div class="jezyk">                   
+                        <input type="checkbox" id="java" name="check1" value="Java">
+                        <label for="java">Java</label>
+
+                        <input type="checkbox" id="javascript" name="check2" value="Javascript">
+                        <label for="javascript">Javascript</label>
+
+                        <input type="checkbox" id="c#" name="check3" value="C#">
+                        <label for="javascript">C#</label>
+
+                        <input type="checkbox" id="kotlin" name="check4" value="Kotlin">
+                        <label for="javascript">Kotlin</label>
+
+                        <input type="checkbox" id="python" name="check5" value="Python">
+                        <label for="javascript">Python</label>
+
+                        <input type="checkbox" id="scala" name="check6" value="Scala">
+                        <label for="javascript">Scala</label>
+                    </div>
+                    </div>
+                </label>
+            </section><br>
+
+            <section class="element_flex">
+                <label class="label">
+                    Message
+                    <textarea rows="5" cols="50" name="comment" form="form" required>Type your message</textarea>
+                </label>
+            </section><br>
+
+            <section class="element_flex">
+                <button type="reset" class="click">Reset</button>
+
+                <button type="submit" class="click">Submit</button>
+            </section><br>    
+        </form>
+
+    </main>
+</body>
+
+</html>
